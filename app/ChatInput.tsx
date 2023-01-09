@@ -37,8 +37,11 @@ function ChatInput() {
       optimisticData: [message, ...messages!],
       rollbackOnError: true,
     });
+
     setInput("");
   };
+
+  console.log(messages);
 
   return (
     <form
